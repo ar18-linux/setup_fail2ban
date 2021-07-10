@@ -64,7 +64,7 @@ set +u
 ar18_deployment_target="$(ar18.script.read_target "${1}")"
 set -u
 
-"${script_dir}/setup_ssh_server/setup_ssh_server.sh" "${ar18_deployment_target}"
+"${script_dir}/setup_fail2ban/setup_fail2ban.sh" "${ar18_deployment_target}"
 
 ##################################SCRIPT_END###################################
 # Restore environment
